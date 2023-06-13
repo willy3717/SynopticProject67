@@ -1,0 +1,18 @@
+html
+  head
+    title User Signup
+    link(rel='stylesheet', href='stylesheets/global.css')
+  body
+    .container
+      form#signup-form(action='/signup' method='POST')
+        h1 User Signup
+        label(for='username') Username:
+        input(type='text', id='username', name='username', required)
+        label(for='password') Password:
+        input(type='password', id='password', name='password', required)
+        label(for='address') Address:
+        input(type='text', id='address', name='address', required)
+        button(type='submit') Signup
+        br
+        a(href="login")
+          button(type="button") login to existing account

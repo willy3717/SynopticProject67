@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/recyclingtips.css')
+  body
+    h1= ""
+      p 
+      form#login-form(action='/logout' method='POST')
+        button(type='submit') Logout
+    block content

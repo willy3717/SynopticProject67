@@ -1,0 +1,17 @@
+html
+  head
+    title User Login
+    link(rel='stylesheet', href='stylesheets/global.css')
+  body
+    .container
+      form#login-form(action='/login' method='POST')
+        h1 User Login
+        label(for='username') Username:
+        input(type='text', id='username', name='username', required)
+        label(for='password') Password:
+        input(type='password', id='password', name='password', required)
+        input(type='hidden', name='formAction', value='login')
+        button(type='submit') Login
+        br
+        a(href="signup")
+          button(type="button") Create a new account

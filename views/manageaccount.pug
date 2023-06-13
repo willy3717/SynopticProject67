@@ -1,0 +1,35 @@
+extends layout-manageaccount
+
+block content
+  div(style="text-align: center;")
+    a.button(href="/" style="display:inline-block;padding:10px;background:#2e7d32;color:#fff;text-decoration:none;border-radius:5px;margin-top:10px;") Home
+
+  h1= title
+
+  if error
+    p Error: #{error}
+
+  form(action="/manageaccount" method="post")
+    div
+      label Username:
+      input(type="text" name="username" value=user.username required)
+    div
+      label Address:
+      input(type="text" name="address" value=user.address required)
+    div
+      label Nationality:
+      input(type="text" name="nationality" value=user.nationality required)
+    div
+      label Email:
+      input(type="email" name="email" value=user.email required)
+    div
+      label Phone Number:
+      input(type="tel" name="phone" value=user.phone required)
+    div
+      label Date of Birth:
+      input(type="date" name="dob" value=(user.dob ? user.dob.toISOString().split('T')[0] : '') required)
+    div
+      input.button(type="submit" value="Update Details")
+
+ 
+

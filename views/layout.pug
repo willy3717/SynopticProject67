@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    h1= Welcome
+      p #{username}
+      form#login-form(action='/logout' method='POST')
+        button(type='submit') Logout
+    block content
+

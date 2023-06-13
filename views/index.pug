@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  .box
+    .header
+      h2 Dashboard
+    .buttons
+      button(type="redirect" onclick="redirectTo('trackdisposal')") Track Disposal
+      button(type="redirect" onclick="redirectTo('recyclingpoint')") Recycling Point
+      button(type="redirect" onclick="redirectTo('reportdisposal')") Report Disposal
+    .header
+      button(type="redirect" onclick="redirectTo('manageaccount')") Manage Account Settings
+      button(type="redirect" onclick="redirectTo('recyclingtips')") Recycling Tips
+      button(type="redirect" onclick="redirectTo('notification')") Get Notified
+      <button onlick="redirectTo('notification')">
+      <img src="/wastemanagementsystem/bin.png">
+      </button>
+    .header
+      button(type="redirect" onclick="redirectTo('recycleitem')") Recycle Item
+    script(src="javascripts/redirect.js")

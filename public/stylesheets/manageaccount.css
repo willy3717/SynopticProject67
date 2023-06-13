@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e8f5e9; /* Light green background */
+}
+
+h1 {
+  color: #2e7d32; /* Dark green for header */
+  text-align: center; /* Centers the text */
+}
+
+
+form {
+  margin: auto;
+  width: 30%;
+  padding: 10px;
+  background-color: #c8e6c9; /* Slightly darker green for the form background */
+  border-radius: 5px;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #2e7d32; /* Dark green for labels */
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"] {
+  width: 85%;
+  padding: 10px;
+  border: 1px solid #4caf50; /* Green border for inputs */
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #4caf50; /* Green for submit button */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049; /* Darken the submit button on hover */
+}
+
+a.button {
+  display: inline-block;
+  padding: 10px;
+  background-color: #4caf50; /* Green for buttons */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+a.button:hover {
+  background-color: #45a049; /* Darken the buttons on hover */
+}
